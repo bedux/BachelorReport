@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}City metaphor as visualization method }{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Corollary Information}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Importance of code related information}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Document Structure}{4}{subsection.1.4}
+\contentsline {section}{\numberline {2}Related Works}{5}{section.2}
+\contentsline {section}{\numberline {3}Approach}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Information Strictly related to the code}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Class and Interface}{6}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Methods and Fields}{7}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Information Not Strictly related to the code}{8}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Java Documentation}{8}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Stack Overflow Discussion}{9}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Merge Code Related information with Corollary Information}{9}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Corollary Information and Methods}{9}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Percentage and Absolute Numbers of informations}{9}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Using Java Doc and Discussion together}{9}{subsubsection.3.4.3}
+\contentsline {subsection}{\numberline {3.5}Colors}{9}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Corollary Information Color meaning}{9}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Code related Color meaning}{9}{subsubsection.3.5.2}
+\contentsline {subsection}{\numberline {3.6}System Architecture }{9}{subsection.3.6}
+\contentsline {section}{\numberline {4}Evaluation}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Tomcat}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}ITextPDF}{9}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{9}{section.5}

@@ -1,0 +1,70 @@
+\begin{thebibliography}{5}
+
+\bibitem{programComp}
+@INPROCEEDINGS{4268257, 
+author={R. Wettel and M. Lanza}, 
+booktitle={15th IEEE International Conference on Program Comprehension (ICPC '07)}, 
+title={Program Comprehension through Software Habitability}, 
+year={2007}, 
+pages={231-240}, 
+keywords={program visualisation;reverse engineering;3D representation;UML;metaphor;program comprehension;software habitability;software visualization;visual representation;Cities and towns;Cognitive science;Humans;Informatics;Navigation;Programming profession;Reverse engineering;Software systems;Visualization;Writing}, 
+doi={10.1109/ICPC.2007.30}, 
+ISSN={1092-8138}, 
+month={June},}
+
+\bibitem{vssac}
+
+@INPROCEEDINGS{4290706, 
+author={R. Wettel and M. Lanza}, 
+booktitle={2007 4th IEEE International Workshop on Visualizing Software for Understanding and Analysis}, 
+title={Visualizing Software Systems as Cities}, 
+year={2007}, 
+pages={92-99}, 
+keywords={data visualisation;object-oriented programming;program visualisation;3D visualization approach;object-oriented software system;program comprehension;realistic software city;source code;Cities and towns;Displays;Java;Navigation;Packaging;Software systems;Software tools;Topology;Visualization}, 
+doi={10.1109/VISSOF.2007.4290706}, 
+month={June},}
+
+\bibitem{gabry}
+@book{gabriel1996patterns,
+title={Patterns of software},
+author={Gabriel, Richard P},
+volume={62},
+year={1996},
+publisher={Oxford University Press New York}
+}
+\bibitem{stormy}
+@inproceedings{Ponz2015a,
+Author = {Luca Ponzanelli and Andrea Mocci and Michele Lanza},
+Title = {StORMeD: Stack Overflow Ready Made Data},
+Booktitle = {Proceedings of MSR 2015 (12th Working Conference on Mining Software Repositories)},
+Pages = {to appear},
+Publisher = {ACM Press},
+Year = {2015}
+}
+\bibitem{Bacchelli}
+@INPROCEEDINGS{6100103, 
+author={A. Bacchelli and A. Cleve and M. Lanza and A. Mocci}, 
+booktitle={Automated Software Engineering (ASE), 2011 26th IEEE/ACM International Conference on}, 
+title={Extracting structured data from natural language documents with island parsing}, 
+year={2011}, 
+pages={476-479}, 
+keywords={data mining;grammars;natural language processing;island parsing;natural language document;structured information;Data mining;Electronic mail;Grammar;History;Java;Natural languages;Production}, 
+doi={10.1109/ASE.2011.6100103}, 
+ISSN={1938-4300}, 
+month={Nov},}	
+
+\bibitem{wikiCory}
+
+@misc{ 
+author = "Wikipedia",
+title = "Corollary",
+url = "https://en.wikipedia.org/wiki/Corollary",
+}
+
+
+
+
+
+\end{thebibliography}
+
+

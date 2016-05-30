@@ -1,0 +1,8 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces A first example of a city\relax }}{3}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Information Strictly related to the code\relax }}{6}{figure.caption.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapping as Width:N of method, height: Number of field, color: javaDoc }}}{6}{figure.caption.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mapping as Width:Discussion count, height: Java doc, color: N of method }}}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Classes and Interfaces Mapping}}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Fields and Methods Mapping}}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Java Documentation Mapping}}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Java Documentation Mapping Only Package}}{8}{figure.caption.8}
