@@ -344,7 +344,7 @@ The Apache Tomcat software is developed in an open and participatory environment
 \end{figure}
 
 
-Figure \ref{fig:tomcat} depict tomcat's code related infrormations. The building represent the java files post on top of his package. The height of a building is the number of method and the width is the number of field. The colour represent in Figure \ref{fig:tomcat:b} the number of interface and in \ref{fig:tomcat:a} the number of classes.\\ 
+Figure \ref{fig:tomcat} depict tomcat's code related informations. The building represent the java files post on top of his package. The height of a building is the number of method and the width is the number of field. The colour represent in Figure \ref{fig:tomcat:b} the number of interface and in \ref{fig:tomcat:a} the number of classes.\\ 
 Generally we have an equal distribution of class and interface for each file, there are only a few anomaly. Whit this software we can not understand if this anomaly are an error or not, we can only give to the developer a monitor to check class that looks strange.\\
 In Figure \ref{fig:tomcat:a} appear clear that there are some classes that has a height concentration of inner classes. Infect if you open the file you'll see a huge number of private static class. This is not a problem for the Java Code Conventions  \cite{oracle} infect there are not more then one public class and all the other inner class are inside the public class. The name and the characteristics are written on the image. As you can see, 2 of them are test classes the other 3 are not.The test class are fine.Tho other three classes could have a high level of coupling that is an hint to check the design.
 Regarding the interface, we  have some  files that contains more then once. In this case we have not big number of interface so it could be a design  chose and not a problem.\\
@@ -367,6 +367,7 @@ The Data class are not too much, once is call,  Constant.java and there are othe
 \label{fig:tomcatCorrollary:b}
 }
 
+\centering
 \subfigure[Tomcat: Discussion and Java Doc]{
 \includegraphics[width=.45\textwidth,height=4cm,keepaspectratio]{images/javaDocAndDiscussionTomcat}
 \label{fig:tomcatCorrollary:c}
@@ -430,6 +431,7 @@ Regarding the methods and  fields. Differently as aspected the file that has mor
 \label{fig:jgitCorrollary:b}
 }
 
+\centering
 \subfigure[JGit: Discussion and Java Doc]{
 \includegraphics[width=.45\textwidth,height=4cm,keepaspectratio]{images/jgitDocDisc}
 \label{fig:jgitCorrollary:c}
@@ -448,14 +450,14 @@ Regarding the methods and  fields. Differently as aspected the file that has mor
 
 
 Figure \ref{fig:jgitCorrollary} depict tomcat's code corollary  informations.The building represent the java files post on top of his package. The height of a building is the number of method and the width is the number of field. The colour represent in Figure \ref{fig:jgitCorrollary:a} the number of discussion over methods, in \ref{fig:jgitCorrollary:b} the number of java documentation over methods and  in \ref{fig:jgitCorrollary:c} the information coverage.\\
-Starting by fig \ref{fig:jgitCorrollary:a} we see that the discussion available are a lot. There aren't any discussion for JGitText since has only fields.There are also a few classes with a 100\% of discussion coverage.\\
+Starting by fig \ref{fig:jgitCorrollary:a} we see that the discussion available are a lot. There are not any discussion for JGitText since has only fields.There are also a few classes with a 100\% of discussion coverage.\\
 The java doc view shows on fig \ref{fig:jgitCorrollary:b} show that there are a lot of building without documentation. Some of them are tests,but a huge number are not so it should be improved.\\
 
 In figure  \ref{fig:jgitCorrollary:c} is show a mix of both information. In general we achieve a good level of information of the entire system.  
 
 \newpage
 \section{Conclusion} \label{conclusion}
-We present Cub8, a novel approach to extract information not strictly related to the code useful to improve the simplicity of understanding a source code. Is the combination of an augmented visualisation system using a 3d city metaphor with information that are retrieve from the web. It allows to get  an idea about the information available and interact with all the resources. Also it gives to the developer a way to analyse and find some code disharmony by changing metrics dynamically. He gives also some tools for filtering objects, showing code. For the moment support the clone of only GIT repository. \\
+We present Cub8, a novel approach to extract information not strictly related to the code useful to improve the simplicity of understanding a source code. Is the combination of an augmented visualization system using a 3d city metaphor with information that are retrieve from the web. It allows to get  an idea about the information available and interact with all the resources. Also it gives to the developer a way to analyze and find some code disharmony by changing metrics dynamically. He gives also some tools for filtering objects, showing code. For the moment support the clone of only GIT repository. \\
 There are some improvement that could be interesting to be implemented like showing the system history or made the matching between java source method call and discussion method call more precise using a type resolution algorithm.\\
   
   
