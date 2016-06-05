@@ -59,28 +59,30 @@ R. P. Gabriel \cite{gabry} said that "Habitability is the characteristic of sour
 \caption{A first example of a city}
 \end{figure}
 
-Starting from this concept, we try to improve this idea of habitability as explained in \cite{vssac} Visualising Software System as City, where this metaphor is used as a way to allows the developers to get a better understanding of a specific software. \\
+Starting from this concept, we use this idea of habitability as explained in \cite{vssac} Visualising Software System as City, where this metaphor is used as a way to allows the developers to get a better understanding of a specific software. \\
 As main aim, we thought to help all the people that, coming to the code late during its implementation and development, need to by filled in quickly about all the reference and the information available on it.\\
 By doing that, the user can navigate and interact with all the city's components, from the folder (shown as the basement in the render) to all the file that compose the project (shown as building in the render). 
 
 
 \subsection{Corollary Information} 
+The concept of corollary as many other concept in computer science, come from math.
 Proposition B is a corollary of proposition A if B can be readily deduced from A or is self-evident from its proof, but the meaning of readily or self-evident varies depending upon the author and context. The importance of the corollary is often considered secondary to that of the initial theorem; B is unlikely to be termed a corollary if its mathematical consequences are as significant as those of A. Sometimes a corollary has a proof that explains the derivation; sometimes the derivation is considered self-evident. \cite{wikiCory}\\
+In computer science we can adapt this definition: first the theorem became our source code, because is the span of our research interest.
+The corollary can be self-evident if they doesn't need computation to be extracted  like the code documentation and we have also information that we  can be readily deduced from the code by doing some computation like external resources related to the code.\\
 
-For instance, the number of class or the Interface in a file, are information that modifies the structure of the whole project because they are the fiscal parts that compose a system; so they all may be considered corollary information. \\
-Instead, on the contrary, the comment has not influenced on the result of a project; it means that they can't be considered corollary information. 
-In other words, we can refer to the fiscal part of a project to all the information that you could draw a UML diagram, and the corollary information as all the component that has no design influence on the project, and so are not representable on a UML.\\
-The java doc can be used as a simple example of Corollary information  because it is not important for the design proposed, but is extremely useful to understand what the code does. We could also think about the information that is not present, but could be found by using your code. Usually, a software is compose using a different third part library, and it could be helpful to know how much information are available about a call of that particular library because this information gives a better understanding of the code that we are working on. 
-The corollary information isn't essentially useful to understand the struct of a system but can give a "normal human readable information" related to its structure.
+For instance, the number of class or the Interface in a file, are information that modifies the structure of the whole project because they are the fiscal parts that compose the source code; so they all may be not considered corollary information but part of the code related information,our theorem. \\
+Instead, the documentation, either internal or external, has not influenced on the result of a project: the structure and the result of your software must not change by adding this information and they may reduce the complexity to implement it.
+In other words, we can refer to the fiscal part of a project or the code related information  to all the information that affect the structure of the system. 
+The java doc can be used as a simple example of Corollary information  because it is not important for the design proposed, but is extremely useful to understand what the code does. We could also think about the information that is not present, but could be found by using your code. Those information integrate the already existent information and gives to the developer a better view to understand more easily the entire system.
 
 \subsection{Importance of code related information} 
-We can't remove the information related to the code during the visualisation process because they give as an intuitively way to understand the topology of the project, and are useful to get a metric unit to better understand what the information coverage means.\\ It's cool to know how much java doc you have respect to a file, but if you don't know the characteristics of that file, you can't say if the documentation is enough or not. Is also useful to use the purely code relation information to have a main idea about the struct of the system, in which package there are more concentration of classes or methods and for highlight design problem.
- 
+We can't remove the information related to the code during the visualisation process because they give as an intuitively way to understand the topology of the project.
+They are also useful to get a metric units to better understand what the information coverage means.\\ It's cool to know how much java doc you have respect to a file, but if you don't know the characteristics of that file, you can't say if the documentation is enough or not. Is also useful to use the purely code relation information to have a main idea about the struct of the system, as we will see later, where we analyse a system, we are using also information strictly related to the code to get some code disharmony.
 
 \subsection{Document Structure} 
 In section 2 we present the related work. We are going to analyse the functionality of system like Cube8 and we explain briefly how stormed works since is use in this project.
 Then we explain the approach used and the different metrics that we used in section 3.
-In section 4 we show  two different projects and how to use out system and which kind of informations are possible to retrieves.
+In section 4 we show  two different projects and how to use our system and which kind of informations are possible to retrieves.
 Finally we conclude with some improvement that will be interesting  to be implemented.
 
 
@@ -91,13 +93,16 @@ Finally we conclude with some improvement that will be interesting  to be implem
 \section{Related Works} \label{related works}
 Cube8 is a mix of two different sectors and works. One is the visualisation method for a software system and the other one is the way to get the corollary information.\\
 
-Program Comprehension through Software Habitability \cite{programComp} propose a city metaphor in which there are a fix number  of building type such as Skyscraper, Office building, Apartment Block,mansion and House. They propose two mapping: Boxplot-based Mapping and Threshold-based Mapping. Also is using a box-packing algorithm to visualise the city.  We are using the same idea of box-packing to organise the city. We also apply the same city metaphor: classes are representing as building located in city districts which in turn represent packages. \\The colour meaning is completely different colour meaning since we have to visualise different information. In those paper they are concentrate about the structure of a software, here we would like to visualise the coverage information. We still allows the developer to get an idea about other software propriety like classes and interface apply different metrics and therefore generate a new city.The size of the building are code dependent, this allows a better understanding about the system. \\ \\
-Visualise Software system as Cities \cite{vssac} is also propose a 3d environment in which the software system is represent as a city, whit different class of buildings. It's also implements a way to navigate and interact with the system.is possible to select any artefact and interact with them, spawning complementary views,  a tagging system and a query system.\\
+\subsection{Program Comprehension through Software Habitability}
+Program Comprehension through Software Habitability \cite{programComp} propose a city metaphor in which there are a fix number  of building type such as Skyscraper, Office building, Apartment Block,mansion and House. They propose two mapping: Boxplot-based Mapping and Threshold-based Mapping. Also they using a box-packing algorithm to visualise the city.  We are using the same idea of box-packing to organise the city. We also apply the same city metaphor: classes are representing as building located in city districts which in turn represent packages. \\The colour meaning is completely different since we have to visualise different information. In those paper they are concentrate about the structure of a software, here we would like to visualise the coverage information. We still allows the developer to get an idea about other software propriety like classes and interface distribution, system identity disharmonies by  applying different metrics in a dynamic context. The size of the building are code dependent, this allows a better understanding about the system. 
+
+\subsection{Visualise Software system as Cities}
+Visualise Software system as Cities \cite{vssac} is also propose a 3d environment in which the software system is represent as a city, whit different class of buildings. It's also implements a way to navigate and interact with the system.is possible to select any artefact and interact with them, spawning complementary views,  a tagging system and a query system.
 In Cube8 we have only some of this feature like a basic query system that allows to search for  file name and perform different actions. Is also possible to read the code and navigate through the information found on the web related to a particular building.\\ \\
 
-
+\subsection{StORMeD}
 The StORMeD \cite{stormy} gives a dataset of JSON files, one for each discussion that contain an H-AST about the discussions. The discussion parsing happens in two different step:the former consist into  HTML tag rules to extract the information unit. The latter concern the effective use of the  heterogeneous island grammar.This approach is an extension of Bacchelli \cite{Bacchelli}.  
- We are using simply this dataset to compute the information coverage of the system.
+We are using simply this dataset to compute the information coverage of the system.
 
  
 
@@ -108,10 +113,12 @@ The StORMeD \cite{stormy} gives a dataset of JSON files, one for each discussion
 \section{Approach} \label{approach}
 
 \subsection{Introduction}
-In this section we are going to analyse the approach used in our tool and explain why we are made same decision. The system language that we analyse  Java, so a Object Oriented language. This imply that we are going to speak about classes, interfaces methods and fields. The container, or building, are the files and not the classes so on building can have more classes and interfaces. 
+In this section we are going to analyse the approach used in our tool and explain why we are made same decision. The system language that we analyse is Java, so a Object Oriented language. This imply that we are going to speak about classes, interfaces methods and fields. The container, or building, are the files and not the classes so on building can have more classes and interfaces.
 
 \subsection{Information Strictly related to the code}
-As describe in the introduction we are used code related information to give to the user a better understanding about the locality of your code. To demonstrate this concept you can see two render about the same code. For simplicity we used a huge system that consist of two classes. ClassA has 4 methods and ClassB has 4 method and the same number of fields. We have to find which class need more documentation. The Java Doc, is express in percentage respect the number of method. The colour goes from light blue to purple: light blue represent the minimum and purple the maximum. In the figure \ref{fig:strictly:a} , we can see that the big box at left as full documentation, instead, the right one has less. Therefore we found the class that need more documentation (classA) in an easy way. Suppose you have to use the figure \ref{fig:strictly:b}, it has more information not related to the code and has only the method count as code related information. The city become unusable since you can not determinate which is the class A and the class B since the only difference is on the number of fields! Later in this chapter we are going to analyse more in detail colour system and the meaning of the used metrics.
+As describe in the introduction we are used code related information to give to the user a better understanding about the locality of the code. To demonstrate this concept you can see two render about the same code. For simplicity we used a huge system that consist of two classes. ClassA has 4 methods and ClassB has 4 method and the same number of fields. We have to find which class need more documentation. The Java Doc, is express in percentage respect the number of method. The colour goes from light blue to purple: light blue represent the minimum and purple the maximum percentage of information available. In the figure \ref{fig:strictly:a} , we can see that the big box at left as full documentation, instead, the right one has less. We assign the width of the building as the fields count and the height the method count;therefore the purplish class is our target and is also intuitively the ClassA since is larger then the other one. \\
+Suppose you have to use the figure \ref{fig:strictly:b}: where is assign to the width the number of discussion, height the number of java documentation and the colour the number of methods. There are represent  more information not related to the code at once, and has only the method count as code related information. The city become unusable since you can not determinate which is the class A and the class B since the only difference is on the number of fields! But at the same time you can made some general statement about the relationship between java documentation and discussion.\\
+ Later in this chapter we are going to analyse more in detail colour system and the meaning of the used metrics.
 \begin{figure}[h]
 \centering
 \subfigure[Mapping as Width:N of method, height: Number of field, colour: javaDoc ]{
@@ -126,15 +133,17 @@ As describe in the introduction we are used code related information to give to 
 
 \caption{Information Strictly related to the code}
 \label{fig:strictly}
-
 \end{figure}
+\newpage
 
 \subsubsection{Class and Interface}
 
 The classes and  interface are another metrics that we add to our tools. Remember that the basic building represented is the source file.  By the Java Code Conventions \cite{oracle}  "Each Java source file contains a single public class or interface. When private classes and
 interfaces are associated with a public class, you can put them in the same source file as the public class". This mean that we could have more classes in a single source file and therefore could be useful to have a metrics that give to the analyser the ability to find this relations.
+Is also useful as a monitor of the level of coupling in the code. If there are a file with a huge amount of class there could be a low height degree of coupling and so the could become hard to maintain. We will see an example during the analysis of tomcat.
 
-\begin{figure}[h]
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=.60\textwidth]{images/ClassesAndInterfaces}
 \caption[Classes and Interfaces Mapping]{Mapping as Width:N of Class, height: Number of interface \label{fig:classInterface}
@@ -143,10 +152,24 @@ interfaces are associated with a public class, you can put them in the same sour
 \end{figure}
 
 This is an example, figure \ref{fig:classInterface}, where we analyse this two concept in a big project.
-As you can see there are a few classes that could need some check to make sure that this design  principle is respected.
+As you can see there are a few classes that could need some check to make sure that this design  principle is respected. We use the width to show that is possible to change metrics respect to what we are going to look at. What is also useful is to map the class to the colour,as done later. This allows to leave the same width and height of the building and is also easier to identify the class or other disharmony. 
+
+
+\subsubsection{Identity Harmony	}\label{sec:idHarmony}
+Design disharmonies are formalised design shortcomings to detonate pieces of system that exhibit design problem. With our tool we can only identify some of the identity harmony. Every entity in the system must justify his existence. Does it implement a specific concept or is it doing to many things or does  it nothing?\\
+
+We can identify 3 kind of disharmonies:
+\begin{itemize}
+
+\item{God Class}:is a class that does too much . In our representation appear like a big box.
+\item{Brain Class}:is a class that accumulate an excessive amount of intelligence,usually has a lot of methods: it's look like an antenna
+\item{Data Class}:is a class that hold a lot of data and doesn't perform any operation:it is appear to a be a big and thin box.
+
+\end{itemize} 
+
 
 \subsubsection{Methods  and Fields}
-Method and field are the main component that compose a class or interface. In the tools we are using this two measure to map  the size of the buildings. The reason is that this two concepts give the correct granularity to have a better understand about the system.\\
+Method and field are the main component that compose a class or an interface. In the tools, we are using this two measure to map  the size of the buildings. The reason is that this two informations gives the correct granularity to have a better understand about the system.\\
 We can also identify a potential God Class that has a hight number of method  or a Data Class that has a hight number of field and a few  methods.
 Let's get an example. We using the same project as before.
 \begin{figure}[h]
@@ -163,28 +186,18 @@ Let's get an example. We using the same project as before.
 
 It's easy to see that there is a  flat an big building that could represent a Data Class and  there are two thigh and height building that could represent a God Class. In this case the both candidate for the god Class are tests. Instead the Data Class has really  686 fields.
 
-\subsubsection{Identity Harmony	}\label{sec:idHarmony}
-Design disharmonies are formalised design shortcomings to detonate pieces of system that exhibit design problem. With our tool we can only identify some of the identity harmony. Every entity in the system must justify his existence. Does it implement a specific concept or is it doing to many things or does  it nothing?\\
 
-We can identify 3 kind of disharmonies:
-\begin{itemize}
-
-\item{God Class}:is a class that does too much . In our representation appear like a big box.
-\item{Brain Class}:is a class that accumulate an excessive amount of intelligence,usually has a lot of methods: it's look like an antenna
-\item{Data Class}:is a class that hold a lot of data and doesn't perform any operation:it is appear to a be a big and thin box.
-
-\end{itemize} 
 
 
     
 \newpage
 \subsection{Information Not Strictly related to the code}
-The information not strictly related to  code are the core of this paper. As we sow before, there already exist tools that allows the visualisation of a system as a city, and they does a lot of computation around strict related information. What we interesting, instead, is the amount ok knowledge that are available about a given system. This knowledge are meaningful to get an idea about the complexity of understanding a software system and where it should be use more effort.At the same time it  could  be use as a monitor for the developers to understand which part of their code need more information.  
+The information not strictly related to  code are the core of this paper. As we sow before, there already exist tools that allows the visualisation of a system as a city, and they does a lot of computation around strict related information. What we interesting, instead, is the amount ok knowledge that are available about a given system. This knowledge are meaningful to get an idea about the complexity of understanding a software system and where it should be use more effort.At the same time it  could  be use as a monitor for the developers to understand which part of their code need more documentation.  
 
 
 \subsubsection{Java Documentation}
-Collecting and visualising the java doc was the first step of the process to collecting the coverage information since it is integrated on the code and he doest require any  particular computations. It cover an important role in the process of understanding the functionality of a given code since is written directly by the developers and should be use in each method, field and class definitions.
-With this computation unit is possible to visualise the documentation state of a project. We usually map the java doc using the colour; it is collect only the method documentation since we claim that was a good level of granularity. The class documentation was not enough, it gives only a global view of the functionalities.
+Collecting and visualising the java documentation was the first step of the process to collecting the coverage information since it is integrated on the code and he doest require any  particular computations. It cover an important role in the process of understanding the functionality of a given code since is written directly by the developers and should be use in each method, field and class definitions.\\
+With this computation unit is possible to visualise the documentation state of a project. We usually map the java documentation using the colour; it is collect only the method documentation since we claim that was a good level of granularity. The class documentation was not enough, it gives only a global view of the functionalities.
 
 \begin{figure}[H]
 	\centering
@@ -194,7 +207,7 @@ With this computation unit is possible to visualise the documentation state of a
 
 \end{figure}
 
-Figure \ref{fig:javaDoc} is example of a city in which the colour represent the percentage of documented methods.The project is the apache common-lang . Is very interesting to see that half of the project has a documentation coverage greaten that the 80\% and in the other one is very rare. In reality this is a common case since a lot of project does't document the tests.
+Figure \ref{fig:javaDoc} is example of a city in which the colour represent the percentage of documented methods.The project is the apache common-lang . Is very interesting to see that half of the project has a documentation coverage greaten that the 80\% and in the other one is very rare. In reality this is a common case since a lot of project does't document the tests.\\
 To help the analyser to understand the documentation coverage we also provide a package base colouring system. In which the colour of each package is the average of the child component. In  this case it look like figure \ref{fig:OnlyPackage}
 
 \begin{figure}[H]
@@ -256,8 +269,41 @@ The colour used to compute the corollary information has two different mining ei
 
 The colour used to compute the code related information it  represent easily the number of methods,fields,class or interfaces in a files.It useful as we are going to see later, to check the code style, for example the number of classes or interfaces into a file or to get an idea where the majority of the methods, fields are concentrated.
 The scale is the same as above: purple mean full information and light blue no documentation available.
-
+\newpage
 \subsection{System Architecture }
+The project is divide in to two different parts. The Stormed import that imports into the database all the useful data from the Stormed Dataset and the visualiser that is the main part  that allows the developer to navigate, interact,modify the city. The former part is written in Scala and latter in Java using the Play Framework. The application is web based. 
+\subsubsection{Stormed Importer}
+Stormed importer is nothing else than a visitor of a json file that represent a discussion. The json file contains an H-AST of the discussion whit all the informations. Since we need only a small subset of this information, we extract the useful one, such as method call whit the number of params and the imports, and we store it in the database. Since this operation is time consuming we adopt a multi thread solution, that reduce drastically the time spent to analyse all the files.Only to give you an idea, we keep ruffly 4 on a server with 16 Intel 2.10 Ghz Xeon processor and 128 Gb of RAM.\\  This script is written in Scala and we used slick that is a database query and access library.  
+   
+
+\subsubsection{Visualizer}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/processPipeline}
+	
+	\caption[Process Pipeline]{Process Pipeline\label{fig:processPipeline}}
+
+\end{figure}
+
+The Visualiser is the core of the system. Since is a web application, it consist in back end and a front end. All the computation are done in server side, since the amount of data is big, we also adopt a strategy to precompute the main metrics and store it a Json file.\\
+To get a better understanding how the system works we can use an example. The first thing to do is upload a repository. We using a git subversion system, so the only thinks you have to do is write the url of your git repository, select the user password if is needed. At this stage the system stat cloning your repository.When the the repository is cloned, it start to analyse the files, this process simply traverse the directory of the the repository and, if a java file is found, it made a AST over that file. This process write on the database all the file characteristics. \\
+
+The next stage  start compute the cities. Since the project structure is a tree we maintain this structure during all the process. To improve the performance during the visualisation, we generate one city for each different metric computation. All the action apply on this stage are like  functions apply to each node a the tree. The first pass throw the tree is the size computation, that give to each node the metrics result for width, height and colour. The next pass set the colour. What we are doing is to map the metrics colour value in a range 0-1. The rendering in client side set the real colour from light blue to purple. After we also compute the package colour and at the end we pack the city.\\
+The packing algorithm is dome as if each package reside in the origin. Only during the rendering time we move the package around the scene.At the end we store the result in a json file. This file contains a tree whit all the information.\\
+We gives also the opportunity to the user to make his own city, by deciding through a predefine list of metrics to assign to each  dimension. This process does exactly the same thing as done after the AST.\\
+
+The front end part gives to the user a way to interact whit the system. The most interesting part is the rendering of the json. You could imagine this process as draw each block on the origin and when the parent is drawn we move his children from the origin to the correct position. In reality is work in the opposite way: the root is in the origin and at each recursion we assign a new origin in which the package should be drawn.We using Babylon.Js as 3d engine that works on top of webGl. Since we are on a browser you can not have more then 10k of boxes. The shader apply to each block is a easy implementation  of Cel Shading , but since we can not apply two passes for each frame and we have simple box, we used a faster version that still has a good effect without affect performance. Easily using the UVs of the texture and the actual size of each box. If you use the same shader with circle or anything else it doesn't works.\\
+
+We also implement a small query system that gives a way to search file or package on the city. By double clicking on a building it appear a pop up whit the java code and we highlight the key word to made the code readable. Also there are a list of discussion views.\\ 
+
+
+
+   
+
+
+
+
 
 \newpage
 \section{Evaluation} \label{evaluation}
@@ -342,15 +388,7 @@ Instead the discussion coverage is pretty good. The colour of the city in averag
 Now that we have the result of both metrics we can merge it together an we have the  \ref{fig:tomcatCorrollary:c}. Thanks to the discussion found online and the documentation, in general, the source code should not be too hard to understanding it.
  
 
-  
-
-
-
-
-
-
-
-
+ 
 
 \newpage
 \subsection{JGit}
@@ -374,16 +412,10 @@ Jgit is an implementation of the Git version control system for java.We analyse 
 }
 \end{figure}
 
-Figure \ref{fig:jgitRel} depict jgit's code related  informations.The building represent the java files post on top of his package. The height of a building is the number of method and the width is the number of field. The colour represent in Figure \ref{fig:jgitRel:a} the number of classes, in \ref{fig:jgitRel:b} the number of java interfaces.\\
+Figure \ref{fig:jgitRel} depict jgit's code related  informations.The building represent the java files post on top of his package. The height of a building is the number of method and the width is the number of field. The colour represent in Figure \ref{fig:jgitRel:a} the number of classes, in \ref{fig:jgitRel:c} the number of java interfaces.\\
 The class number view shows that there are some files that have more then one class. Is important to note that the maximum amount of class is 10. Also the interface distribution appear to be well spread, there are only a few occurrence of multiple interface on the same class. Just remind that is not a crime to have more interface or class in the same file. The problem is that if you have too much you could have a small coupling degree that is bad! \\
 Regarding the methods and  fields. Differently as aspected the file that has more class has not more field and methods.We can see a god class call PackWriter.java that has 48 fields and 121 methods. There are also 2 big data class:CLIText and JGitText. At last but not least there is a brain class call RepositoryState.java that has 90 methods.
  
-
-
- 
-
-
-
 
 
  \subsubsection{Corollary Information analysis}
@@ -415,9 +447,18 @@ Regarding the methods and  fields. Differently as aspected the file that has mor
 \end{figure}
 
 
+Figure \ref{fig:jgitCorrollary} depict tomcat's code corollary  informations.The building represent the java files post on top of his package. The height of a building is the number of method and the width is the number of field. The colour represent in Figure \ref{fig:jgitCorrollary:a} the number of discussion over methods, in \ref{fig:jgitCorrollary:b} the number of java documentation over methods and  in \ref{fig:jgitCorrollary:c} the information coverage.\\
+Starting by fig \ref{fig:jgitCorrollary:a} we see that the discussion available are a lot. There aren't any discussion for JGitText since has only fields.There are also a few classes with a 100\% of discussion coverage.\\
+The java doc view shows on fig \ref{fig:jgitCorrollary:b} show that there are a lot of building without documentation. Some of them are tests,but a huge number are not so it should be improved.\\
+
+In figure  \ref{fig:jgitCorrollary:c} is show a mix of both information. In general we achieve a good level of information of the entire system.  
+
+\newpage
 \section{Conclusion} \label{conclusion}
-
-
+We present Cub8, a novel approach to extract information not strictly related to the code useful to improve the simplicity of understanding a source code. Is the combination of an augmented visualisation system using a 3d city metaphor with information that are retrieve from the web. It allows to get  an idea about the information available and interact with all the resources. Also it gives to the developer a way to analyse and find some code disharmony by changing metrics dynamically. He gives also some tools for filtering objects, showing code. For the moment support the clone of only GIT repository. \\
+There are some improvement that could be interesting to be implemented like showing the system history or made the matching between java source method call and discussion method call more precise using a type resolution algorithm.\\
+  
+  
 
 
 
