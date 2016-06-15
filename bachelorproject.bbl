@@ -26,7 +26,7 @@ T.~A. Corbi.
 \newblock Program understanding: Challenge for the 1990's.
 \newblock {\em IBM Syst. J.}, 28(2):294--306, June 1989.
 
-\bibitem{gabry}
+\bibitem{Gabriel}
 R.~P. Gabriel.
 \newblock {\em Patterns of software}, volume~62.
 \newblock Oxford University Press New York, 1996.
@@ -64,7 +64,7 @@ L.~Ponzanelli, A.~Mocci, A.~Bacchelli, and M.~Lanza.
 \newblock In {\em 2014 14th International Conference on Quality Software},
   pages 343--352, Oct 2014.
 
-\bibitem{stormy}
+\bibitem{stormed}
 L.~Ponzanelli, A.~Mocci, and M.~Lanza.
 \newblock Stormed: Stack overflow ready made data.
 \newblock In {\em Proceedings of MSR 2015 (12th Working Conference on Mining
