@@ -1,79 +1,115 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{10}
 
-\bibitem{programComp}
-@INPROCEEDINGS{4268257, 
-author={R. Wettel and M. Lanza}, 
-booktitle={15th IEEE International Conference on Program Comprehension (ICPC '07)}, 
-title={Program Comprehension through Software Habitability}, 
-year={2007}, 
-pages={231-240}, 
-keywords={program visualisation;reverse engineering;3D representation;UML;metaphor;program comprehension;software habitability;software visualization;visual representation;Cities and towns;Cognitive science;Humans;Informatics;Navigation;Programming profession;Reverse engineering;Software systems;Visualization;Writing}, 
-doi={10.1109/ICPC.2007.30}, 
-ISSN={1092-8138}, 
-month={June},}
+\bibitem{7231439}
+A.~Arwan, S.~Rochimah, and R.~J. Akbar.
+\newblock Source code retrieval on stackoverflow using lda.
+\newblock In {\em Information and Communication Technology (ICoICT ), 2015 3rd
+  International Conference on}, pages 295--299, May 2015.
 
-\bibitem{vssac}
+\bibitem{LS}
+M.~Balzer, A.~Noack, O.~Deussen, and C.~Lewerentz.
+\newblock Software landscapes: Visualizing the structure of large software
+  systems.
+\newblock In {\em Proceedings of the Sixth Joint Eurographics - IEEE TCVG
+  Conference on Visualization}, VISSYM'04, pages 261--266, Aire-la-Ville,
+  Switzerland, Switzerland, 2004. Eurographics Association.
 
-@INPROCEEDINGS{4290706, 
-author={R. Wettel and M. Lanza}, 
-booktitle={2007 4th IEEE International Workshop on Visualizing Software for Understanding and Analysis}, 
-title={Visualizing Software Systems as Cities}, 
-year={2007}, 
-pages={92-99}, 
-keywords={data visualisation;object-oriented programming;program visualisation;3D visualization approach;object-oriented software system;program comprehension;realistic software city;source code;Cities and towns;Displays;Java;Navigation;Packaging;Software systems;Software tools;Topology;Visualization}, 
-doi={10.1109/VISSOF.2007.4290706}, 
-month={June},}
+\bibitem{IDM}
+S.~M. Charters, C.~Knight, N.~Thomas, and M.~Munro.
+\newblock Visualisation for informed decision making; from code to components.
+\newblock In {\em Proceedings of the 14th International Conference on Software
+  Engineering and Knowledge Engineering}, SEKE '02, pages 765--772, New York,
+  NY, USA, 2002. ACM.
+
+\bibitem{Corbi}
+T.~A. Corbi.
+\newblock Program understanding: Challenge for the 1990's.
+\newblock {\em IBM Syst. J.}, 28(2):294--306, June 1989.
 
 \bibitem{gabry}
-@book{gabriel1996patterns,
-title={Patterns of software},
-author={Gabriel, Richard P},
-volume={62},
-year={1996},
-publisher={Oxford University Press New York}
-}
-\bibitem{stormy}
-@inproceedings{Ponz2015a,
-Author = {Luca Ponzanelli and Andrea Mocci and Michele Lanza},
-Title = {StORMeD: Stack Overflow Ready Made Data},
-Booktitle = {Proceedings of MSR 2015 (12th Working Conference on Mining Software Repositories)},
-Pages = {to appear},
-Publisher = {ACM Press},
-Year = {2015}
-}
-\bibitem{Bacchelli}
-@INPROCEEDINGS{6100103, 
-author={A. Bacchelli and A. Cleve and M. Lanza and A. Mocci}, 
-booktitle={Automated Software Engineering (ASE), 2011 26th IEEE/ACM International Conference on}, 
-title={Extracting structured data from natural language documents with island parsing}, 
-year={2011}, 
-pages={476-479}, 
-keywords={data mining;grammars;natural language processing;island parsing;natural language document;structured information;Data mining;Electronic mail;Grammar;History;Java;Natural languages;Production}, 
-doi={10.1109/ASE.2011.6100103}, 
-ISSN={1938-4300}, 
-month={Nov},}	
+R.~P. Gabriel.
+\newblock {\em Patterns of software}, volume~62.
+\newblock Oxford University Press New York, 1996.
 
-\bibitem{wikiCory}
+\bibitem{Guimaraes}
+T.~Guimaraes.
+\newblock Managing application program maintenance expenditures.
+\newblock {\em Commun. ACM}, 26(10):739--746, Oct. 1983.
 
-@misc{ 
-author = "Wikipedia",
-title = "Corollary",
-url = "https://en.wikipedia.org/wiki/Corollary",
-}
+\bibitem{SoftwareWorld}
+C.~Knight and M.~Munro.
+\newblock Virtual but visible software.
+\newblock In {\em Information Visualization, 2000. Proceedings. IEEE
+  International Conference on}, pages 198--205, 2000.
 
+\bibitem{LaToza}
+T.~D. LaToza, G.~Venolia, and R.~DeLine.
+\newblock Maintaining mental models: A study of developer work habits.
+\newblock In {\em Proceedings of the 28th International Conference on Software
+  Engineering}, ICSE '06, pages 492--501, New York, NY, USA, 2006. ACM.
 
-
+\bibitem{Mayrhauser}
+A.~V. Mayrhauser and A.~M. Vans.
+\newblock Program comprehension during software maintenance and evolution.
+\newblock {\em Computer}, 28(8):44--55, Aug 1995.
 
 \bibitem{oracle}
+Oracle.
+\newblock Java code conventions.
 
-@misc{ 
-author = "Oracle",
-title = "Java Code Conventions",
-url = "http://www.oracle.com/technetwork/java/codeconventions-150003.pdf",
-}
+\bibitem{QEA}
+L.~Ponzanelli, A.~Mocci, A.~Bacchelli, and M.~Lanza.
+\newblock Understanding and classifying the quality of technical forum
+  questions.
+\newblock In {\em 2014 14th International Conference on Quality Software},
+  pages 343--352, Oct 2014.
 
+\bibitem{stormy}
+L.~Ponzanelli, A.~Mocci, and M.~Lanza.
+\newblock Stormed: Stack overflow ready made data.
+\newblock In {\em Proceedings of MSR 2015 (12th Working Conference on Mining
+  Software Repositories)}, page to appear. ACM Press, 2015.
 
+\bibitem{Treude}
+C.~Treude, O.~Barzilay, and M.-A. Storey.
+\newblock How do programmers ask and answer questions on the web? (nier track).
+\newblock In {\em Proceedings of the 33rd International Conference on Software
+  Engineering}, ICSE '11, pages 804--807, New York, NY, USA, 2011. ACM.
+
+\bibitem{SISE}
+C.~Treude and M.~P. Robillard.
+\newblock Augmenting api documentation with insights from stack overflow.
+\newblock In {\em Proceedings of the 38th International Conference on Software
+  Engineering}, ICSE '16, pages 392--403, New York, NY, USA, 2016. ACM.
+
+\bibitem{VVV}
+Y.~Tymchuk, A.~Mocci, and M.~Lanza.
+\newblock Code review: Veni, vidi, vici.
+\newblock In {\em 2015 IEEE 22nd International Conference on Software Analysis,
+  Evolution, and Reengineering (SANER)}, pages 151--160, March 2015.
+
+\bibitem{programComp}
+R.~Wettel and M.~Lanza.
+\newblock Program comprehension through software habitability.
+\newblock In {\em 15th IEEE International Conference on Program Comprehension
+  (ICPC '07)}, pages 231--240, June 2007.
+
+\bibitem{vssac}
+R.~Wettel and M.~Lanza.
+\newblock Visualizing software systems as cities.
+\newblock In {\em 2007 4th IEEE International Workshop on Visualizing Software
+  for Understanding and Analysis}, pages 92--99, June 2007.
+
+\bibitem{Evolution}
+R.~Wettel and M.~Lanza.
+\newblock Visual exploration of large-scale system evolution.
+\newblock In {\em 2008 15th Working Conference on Reverse Engineering}, pages
+  219--228, Oct 2008.
+
+\bibitem{Disharmony}
+R.~Wettel and M.~Lanza.
+\newblock Visually localizing design problems with disharmony maps.
+\newblock In {\em Proceedings of the 4th ACM Symposium on Software
+  Visualization}, SoftVis '08, pages 155--164, New York, NY, USA, 2008. ACM.
 
 \end{thebibliography}
-
-
